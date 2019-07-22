@@ -1,0 +1,9 @@
+version: '2.1'
+
+services:
+    sonope:
+        container_name: sonope
+        build: .
+        restart: always
+        volumes:
+            - ./blacklist.csv:/blacklist.csv
