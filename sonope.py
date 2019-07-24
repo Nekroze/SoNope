@@ -29,7 +29,6 @@ def Main():
         print("Did not connect to a Sonos Zone!")
         print("Try specifying the IP address with -i")
         sys.exit(1)
-    print(target.__dict__)
 
     blacklist = load_blacklist(arguments['-b'])
 
