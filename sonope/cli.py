@@ -22,7 +22,7 @@ from docopt import docopt
 
 
 def Main():
-    arguments = docopt(__doc__, version='Sonope 0.0.1')
+    arguments = docopt(__doc__, version='Sonope 0.1.0')
 
     target = get_target(arguments['-i'], arguments['-z'])
     if target is None:

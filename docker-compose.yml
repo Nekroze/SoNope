@@ -7,3 +7,7 @@ services:
         restart: always
         volumes:
             - ./blacklist.csv:/blacklist.csv
+        command:
+            - -i
+            - 192.168.103.106
+        tty: True

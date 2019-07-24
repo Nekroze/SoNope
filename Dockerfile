@@ -1,8 +1,9 @@
 FROM python:3
 
-RUN pip install soco docopt
+COPY ./requirements.txt .
+RUN pip install -r requirements.txt
 
-COPY ./sonope.py /usr/local/bin/sonope
+COPY ./sonope/cli.py /usr/local/bin/sonope
 WORKDIR /
 COPY ./blacklist.csv /blacklist.csv
 
